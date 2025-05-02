@@ -8,7 +8,11 @@ import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import bitsOfCode from "../../Assets/Projects/project4.png";
+import movieapp from "../../Assets/Projects/project5.png";
+import urbannest from "../../Assets/Projects/project1.png";
+import reciMe from "../../Assets/Projects/project2.png";
+import airbnb from "../../Assets/Projects/project3.png";
 
 function Projects() {
   return (
@@ -55,24 +59,58 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Devin AI Developer"
-              description="Devin AI – Built an AI-powered real-time chat application using the MERN stack, integrated with Google Gemini AI to function as a personalized developer capable of creating web applications. Implemented WebSockets for seamless real-time communication and Redis for performance optimization."
-              ghLink="https://github.com/heetraval26/Ai-developer"
-              demoLink=""
-            />
-          </Col>
-
+      
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
               title="CollegeMate"
               description="A college-level freelancing platform where senior students can post projects and junior students can bid, collaborate, and build their portfolios. Built with Django (backend), React.js (frontend), and PostgreSQL (database). Features include secure authentication, dynamic project posting, bidding workflows, user profile management, and blog integration to foster a student-driven marketplace."
-              ghLink="https://github.com/heetraval26/spring-ai-project"
+              ghLink="https://github.com/codehardee/college-mate"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={movieapp}
+              isBlog={false}
+              title="Movie App"
+              description="A movie management web application that allows users to explore movies, perform full CRUD operations (Create, Read, Update, Delete), and manage a personalized favorites list. Built with React.js on the frontend and integrated with a movie API for dynamic data handling. Features include intuitive UI, seamless API interaction, adding and removing movies from favorites, and efficient state management, making it a practical project for mastering React development fundamentals."
+              ghLink="https://github.com/codehardee/movie-app"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={urbannest}
+              isBlog={false}
+              title="Urban Nest"
+              description="Urban Nest is a fully functional e-commerce platform developed as part of the CSD2103 course project. Built with JavaScript, HTML, CSS, and Bootstrap, the application features a dynamic shopping experience with a persistent cart powered by local storage, category-based product filtering, real-time search functionality, and session-based authentication for secure user management. It showcases essential e-commerce workflows, including product browsing, cart management, and user login, making it a robust project for demonstrating front-end development skills." 
+              ghLink="https://github.com/codehardee/urban-nest"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={reciMe}
+              isBlog={false}
+              title="ReciMe"
+              description="ReciMe is a collaborative recipe-sharing platform developed as part of the CSD4523 course project. Built with Django, HTML, CSS, Bootstrap, JavaScript, jQuery, and AJAX, the application enables users to browse a wide variety of step-by-step recipes, create and share their own culinary creations, and engage with the community through likes, bookmarks, and reviews. A unique “Chef Mode” highlights expert-contributed content, making ReciMe more than just a recipe site—it’s an interactive hub for cooking enthusiasts. The project uses SQLite3 for data management and showcases both backend and frontend integration."
+              ghLink="https://github.com/codehardee/recime-project"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={airbnb}
+              isBlog={false}
+              title="AirBnb Replica"
+              description="An Airbnb-inspired web application built with Node.js, Express.js, MongoDB, and EJS templates. The project features backend APIs that fetch and serve data from an Airbnb dataset, along with a dynamic frontend built using EJS for rendering listings. It includes core functionalities such as basic pagination for smooth browsing, seamless API integration, and data-driven page rendering, making it a solid full-stack project that demonstrates RESTful API design, database interaction, and server-side templating." 
+              ghLink="https://github.com/codehardee/airbnb-replica"
               demoLink=""
             />
           </Col>
