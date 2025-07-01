@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
+import { FiExternalLink } from "react-icons/fi";
+
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
@@ -31,6 +33,18 @@ function ProjectCards(props) {
           >
             <CgWebsite /> &nbsp;
             {"Demo"}
+          </Button>
+        )}
+
+         {!props.isBlog && props.liveLink && (
+          <Button
+            variant="primary"
+            href={props.liveLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <FiExternalLink /> &nbsp;
+            {"Live Site"}
           </Button>
         )}
       </Card.Body>
